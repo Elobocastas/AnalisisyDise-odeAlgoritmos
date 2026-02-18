@@ -1,0 +1,40 @@
+import pandas as pd
+
+# Cargo los datos (asumiendo que bajaste el train.csv de Kaggle)
+df = pd.read_csv('train.csv')
+
+# Elegimos la columna de precios
+precios = df['SalePrice'].tolist()
+n = len(precios)
+
+# 1. Media (Promedio)
+suma_total = 0
+for p in precios:
+    suma_total += p
+media = suma_total / n
+
+# 2. Moda (El que más se repite)
+frecuencias = {}
+for p in precios:
+    frecuencias[p] = frecuencias.get(p, 0) + 1
+
+moda = precios[0]
+max_repeticiones = 0
+for p, f in frecuencias.items():
+    if f > max_repeticiones:
+        max_repeticiones = f
+        moda = p
+
+# 3. Varianza (Suma de cuadrados de la diferencia con la media)
+suma_cuadrados = 0
+for p in precios:
+    suma_cuadrados += (p - media)**2
+varianza = suma_cuadrados / n
+
+# 4. Desviación Estándar (Raíz de la varianza)
+desviacion = varianza ** 0.5
+
+print(f"Media: {media}")
+print(f"Moda: {moda}")
+print(f"Varianza: {varianza}")
+print(f"Desviación: {desviacion}")
