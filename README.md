@@ -17,9 +17,11 @@ Se creó el repositorio con el nombre **AnalisisyDisenodeAlgoritmos**, incluyend
 
 ![Configuración inicial](assets/Ajustesgit.png)
 
+
+
+![Clonado](assets/Clonado.png)
 ### Paso 2: Clonación en nuestra carpeta 
 Utilicé la terminal para clonar el repositorio localmente en la carpeta que queria el repositorio:
 ```bash
 git clone [https://github.com/Elobocastas/AnalisisyDise-odeAlgoritmos.git](https://github.com/Elobocastas/AnalisisyDise-odeAlgoritmos.git)
 
-(assets/Clonado.png)
