@@ -15,7 +15,7 @@ Este repositorio contiene las prácticas y ejercicios de la materia.
 ### Paso 1: Configuración en GitHub
 Se creó el repositorio con el nombre **AnalisisyDisenodeAlgoritmos**, incluyendo un archivo `.gitignore` para Python y la licencia **GNU GPL v3**.
 
-![Configuración inicial](assets/Ajustesgit)
+![Configuración inicial](assets/Ajustesgit.png)
 
 ### Paso 2: Clonación en nuestra carpeta 
 Utilicé la terminal para clonar el repositorio localmente en la carpeta que queria el repositorio:
